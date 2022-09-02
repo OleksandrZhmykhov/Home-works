@@ -18,4 +18,11 @@ p.start {
 input[required] {
     border-color: #FFD700;
 }
+.text2
+{
+    text-decoration:underline;
+}
 
+li>span {
+    color: red;
+}
