@@ -1,0 +1,21 @@
+p {
+    color: #C71585;
+}
+p.start {
+    color: aqua;
+
+}
+* {
+    color: #6A5ACD;
+}
+#mainTitle {
+   color:  #4169E1;
+}
+.default-text {
+    color: #9ACD32;
+}
+
+input[required] {
+    border-color: #FFD700;
+}
+
