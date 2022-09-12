@@ -2,3 +2,27 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+body {
+    font-size: 20px;
+    padding: 5rem;
+}
+th, td {
+    padding: 0.25rem;
+}
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border {
+    border: 1px solid black; 
+}
