@@ -1,4 +1,47 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color:brown;
+}
+.nav-main {
+background-color: rgb(18, 142, 151);
+}
+.nav-main li {
+display: inline-block;
+}
+.first-level {
+    padding: 10px;
+}
+.parent {
+    position: relative;
+}
+.parent:hover {
+ background-color: rgb(198, 211, 21);
+}
+
+.child {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 38px;
+}
+.parent:hover > .child {
+    display: block;   
+}
+.child-item {
+    background-color: rgb(198, 211, 21);
+    width: 160px;
+    padding: 5px;
+}
+.third-level {
+    position: absolute;
+    top: 0px;
+    left: 160px;
 }
