@@ -1,4 +1,572 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+:root{
+ --main-bg-color: #F5F5F5;
+ --secondary-bg-color: #E7DED8;
+ --main-font-color: #000000;
+ --nav-font-color: #222222;
+ --color-brown: #68513F;
+ --button-bg-color: #DACEC6;
+ --button-secondary-bg-color: #F1EBE7;
+ --picture-text-color: #FFFFFF;
+}
+a {
+    text-decoration: none;
+}
+/*----------------------------common elements------*/
+.container{
+    width: 100%;
+    max-width: 1340px;
+    margin-right: auto;
+    margin-left: auto;  
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.inline-block{
+    display: inline-block;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between  {
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.align-center{
+    align-items: center;
+}
+.g40{
+    gap: 40px;
+}
+.relative {
+    position: relative;
+}
+/*--------------------------------header--------------------------------------*/
+.header-margin{
+    margin-top: 36px;
+    margin-bottom: 40px;
+}
+.header-link{
+    color: var(--nav-font-color);
+}
+.cart-button{
+    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+    background-color:var(--secondary-bg-color);
+    color:var(--color-brown);
+    border: none;
+    
+}
+/*--------------------------------banner--------------------------------------*/
+.banner-image {
+position: sticky;
+height: 750px;
+width: 938px;
+left: 923px;
+right: 0px;
+top: 0px;
+}
+.banner-text {
+    position: absolute;
+    height: 282px;
+    width: 510px;
+    margin-left: 50px;
+    margin-top: 150px;
+    z-index: 2;  
+}
+.header-text  {
+    font-family: 'STSong';
+font-style: normal;
+font-weight: 300;
+font-size: 81px;
+line-height: 126px;
+}
+.header-line {
+    font-size: 81px;
+}
+.banner-button {
+    border: 1px solid var(--button-bg-color);
+    background-color: var(--button-secondary-bg-color);
+    padding: 13px 21px 12px 21px;
+    cursor: pointer;
+}
+.banner-you {
+    
+font-family: 'Style Script';
+font-style: normal;
+font-weight: 400;
+font-size: 175px;
+line-height: 182px;
+text-align: right;
+color: #68513F;
+transform: rotate(5.54deg);
+/*--position---*/
+position: absolute;
+width: 257px;
+height: 182px;
+right: -137.57px;
+top: 227px;
+}
+/*-----------------------------------------------------many images------------------------------------------*/
+.middle{
+    height: 946px;
+}
+.middle-text-style{
+    position: absolute;
+    height: 466px;
+    left: 370px;
+    top: 240px;
+    width: 700px;
+}
+.middle-text-title{
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 65px;
+    line-height: 98px;
+    text-align: center;
+    color: var(--main-font-color);
+    width: 525px;
+}
+.middle-text-title-big{
+    font-size: 70px;
+}
+.skincare{
+position: absolute;
+width: 369px;
+height: 112px;
+left: 172px;
+top: 203.67px;
+font-family: 'Style Script';
+font-style: normal;
+font-weight: 400;
+font-size: 137px;
+line-height: 112px;
+text-align: center;
+color:var(--color-brown);
+transform: rotate(-5.08deg);
+}
+.middle-second-text{
+    position: absolute;
+    width: 649px;
+    height: 40px;
+    left: 26px;
+    top: 334px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+.button-midle{
+    padding: 13px 21px 12px 21px;
+    background: var(--button-secondary-bg-color);
+    border: 1px solid var(--button-bg-color);
+    border-radius: 73px;
+    position: absolute;
+    left: 290px;
+    bottom: 0px;
+}
+.button-midle-label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--color-brown);
+}
+.pictures-middle {
+    position:absolute;
+    border-radius: 10px;
+}
+.picture-twoladies{
+    height: 201px;
+    width: 159px;
+    left: 1022px;
+    top: 21px;
+}
+.picture-hands{
+    height: 183px;
+    width: 221px;
+    left: 86px;
+    top: 117px;
+}
+.green-stone{
+    height: 114px;
+    width: 221px;
+    left: 1104px;
+    top: 266px;
+}
+.picture-bottles{
+    height: 220px;
+    width: 221px;
+    left: 144px;
+    top: 488px;
+}
+.picture-man{
+    height: 220px;
+    width: 222px;
+    left: 1016px;
+    top: 569px;
+    z-index: 2;
+}
+.banner-lady{
+    position: initial;
+    background: url(./images/lady-with-cream.png);
+    height: 500px;
+}
+/*----------------------------------------------------------products------------------------------------*/
+/*.products{
+    height: 716.75px;
+}*/
+.priducts-title{
+    font-family: 'Style Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 137px;
+    text-align: center;
+    color:var(--color-brown);
+    margin-top: 90px;
+    margin-bottom: 5px;
+}
+.products-second-text{
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 65px;
+    line-height: 98px;
+    text-align: center;
+    color:var(--main-font-color);
+    margin-top: 5px;
+    margin-bottom: 60px;
+}
+.card-style{
+    height: 502px;
+    width: 325px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    background:var(--secondary-bg-color);
+    padding: 10px;
+}
+.gap-14{
+    gap: 14px;
+}
+.p-price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--main-font-color);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.p-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color:var(--main-font-color);
+    margin-top: 19px;
+    margin-bottom: 6px;
+}
+.p-second-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+    color:var(--main-font-color);
+    margin-top: 6px;
+    margin-bottom: 41px;
+}
+.products-button{
+    background:var(--button-secondary-bg-color);
+    border: 1px solid #DACEC6;
+    border-radius: 5px;
+    padding: 12px 119px 13px 119px;
+}
+/*----------------------------------------------------------feature------------------------------------*/
+.feature{
+    height: 488px;
+    margin-top: 119.75px;
+}
+.top-feature{
+    font-family: 'Style Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 137px;
+    line-height: 112px;
+    text-align: center;
+    color:var(--color-brown);
+    margin:0px 190px 9px 240px;
+}
+.second-innovation{
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 98px;
+    text-align: center;
+    color:var(--main-font-color);
+    margin: 0px 140px 25px 191px;
+}
+.temporibus{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+    color:var(--main-font-color);
+    margin: 0px 130px 39px 180px;
+}
+.button-feature{
+    display: block;
+    margin-left: 353px;
+    margin-right: 302px;
+    height: 45px;
+    width: 115px;
+    padding: 12px 21px 13px 21px;
+    background:var(--button-secondary-bg-color);
+    border: 1px solid var(--button-bg-color);
+}
+.labels-top{
+    margin-top: 203.75px;
+}
+
+.p-labels{
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 118px;
+    width: 832px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;  
+    text-align: center;
+    color:var(--main-font-color);
+}
+.gap70 {
+    gap:70px;
+}
+.labels-margin {
+    margin-top: 56.75px;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding-left: 89px;
+    padding-right: 89px;
+}
+.body-wash-bg{
+    background: url(./images/body-wash.png) no-repeat right;
+}
+.face-wash{
+    background: url(./images/face-wash.png);
+}
+.cleaner{
+    background: url(./images/cleaner.png);
+}
+.bg-wash-size{
+    height: 518px;
+    width: 518px;
+}
+.picture-text{
+    /*---font---*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--picture-text-color);
+    /*---font---*/
+    margin: 184px 187px 184px 181px;
+    padding: 65px 33px 65px 34px;
+    text-align: center;
+    border: 1px solid var(--picture-text-color);
+}
+.washes{
+    margin-top: 209px;
+    max-width: 1455px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.skin-blog-style{
+    margin-top: 92.25px;
+    margin-bottom: 51px;
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 66px;
+    line-height: 98px;
+    text-align: center;
+    color:var(--main-font-color);
+}
+.second-blog-text{
+    margin-bottom: 95px;
+    margin-left: 30px;
+    margin-right: 88px;
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 36px;
+    color:var(--main-font-color);
+}
+.second-blog-text2{
+    margin-bottom: 95px;
+    margin-left: 30px;
+    margin-right: 84px;
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 36px;
+    color:var(--main-font-color);
+}
+.skin-blog-link{
+    background:var(--button-secondary-bg-color);
+    border: 1px solid var(--button-bg-color);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--color-brown);
+    border-radius: 166px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 242px;
+    padding: 13px 21px 12px 21px;
+}
+.foot-bg-radius{
+    border-radius: 10px;
+    background-color: var(--secondary-bg-color) ;
+    padding: 50px 70px 69px 50px;
+    margin-top: 127.75px;
+    margin-bottom: 62px;
+}
+.skin{
+    margin-bottom: 21px;
+}
+.skin-text-first{
+    max-width: 188px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color:var(--main-font-color);
+}
+.skin-margin{
+    margin-bottom: 57px;
+}
+.skin-link-color{
+    color: var(--color-brown);
+}
+.footer-pages{
+    max-width: 250.66px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.pages-title{
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 39px;
+    color: var(--main-font-color);
+    margin-bottom: 29px;
+}
+.pages-column-one{
+    width: 100.56px;
+    padding-bottom: 9.92px;
+}
+.pages-column-second{
+    padding-bottom: 9.92px;
+    width: 134.08px;
+}
+.pages-column-font{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+.footer-link-color{
+    color:var(--main-font-color);
+}
+.footer-contact-title{
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 39px;
+    color: var(--main-font-color);
+    margin-bottom: 29px;
+}
+.contact-frame{
+    width: 250.66px;
+}
+.contact-margin{
+    margin-top: 39px;
+}
+.contact-style{
+    max-width: 215px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color:var(--main-font-color);
+}
+.contact-link-margin-color{
+    margin-top: 9px;
+    color:var(--color-brown);
+    display: block;
+}
+.we-here{
+    width: 250.66px;
+    margin-left: 100px;
+}
+.we-here-title{
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 39px;
+    color: var(--main-font-color);
+    margin-bottom: 29px;
+}
+.we-here-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--main-font-color);
+}
+.we-here-margin{
+    margin-top: 9px;
+}
+.we-here-icons{
+    margin-top: 71px;
 }

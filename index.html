@@ -4,165 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <a href="#"><img src="./images/Skinn-logo.png" alt="Logo"></a>
-        <nav>
-            <a href="#">Shop All</a>
-            <a href="#">Our Story</a>
-            <a href="#">Blog</a>
-            <a href="#">Pages</a>
+    <header class="header-margin">
+        <div class="container flex justify-between">
+        <a class="inline-block" href="#"><img src="./images/Skinn-logo.png" alt="Logo"></a>
+        <nav class="flex g40">
+            <a class="header-link" href="#">Shop All</a>
+            <a class="header-link" href="#">Our Story</a>
+            <a class="header-link" href="#">Blog</a>
+            <a class="header-link" href="#">Pages</a>
         </nav>
-        <a href="#">Cart</a>
+        <div class="flex relative align-center">
+        <a class="inline-block header-link" href="#">Cart</a> 
+        <button class="cart-button inline-block" type="button">0</button>
+        </div>
+        </div>
     </header>
     <main>
         <section>
-            <div>
-                <h1>Discover The Beauty Within You</h1>
-                <button type="button">View collection</button>
+            <div class="container flex">
+                <div class="banner-text">
+                    <h1 class="header-text">Discover The <span class="header-line">Beauty Within </span> <span class="banner-you"> You</span></h1>
+                    <button class = "banner-button" type="button">View collection</button>
+                </div>
+                 <img class = "banner-image" src="./images/face.png" alt="face">
             </div>
         </section>
         <section>
-            <div>
-                <img src="./images/ladies.png" alt="ladies">
-                <img src="./images/hands.png" alt="hands">
-                <img src="./images/stone.png" alt="stone">
-                <img src="./images/bottles.png" alt="bottles">
-                <img src="./images/man.png" alt="man">
-                <h2>Natural and certified organic Skincare</h2>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
-                <button type="button">Shop all</button>
+            <div class="relative container middle">
+                <img class="picture-twoladies pictures-middle"  src="./images/ladies.png" alt="ladies">
+                <img class="picture-hands pictures-middle"  src="./images/hands.png" alt="hands">
+                <img class="green-stone pictures-middle"  src="./images/stone.png" alt="stone">
+                <img class="picture-bottles pictures-middle"  src="./images/bottles.png" alt="bottles">
+                <img class="picture-man pictures-middle"  src="./images/man.png" alt="man">
+                <div class="middle-text-style flex justify-center">
+                <h2 class="middle-text-title ">Natural and <span class="middle-text-title-big">certified organic</span> <span class="skincare">Skincare</span></h2>
+                <p class="middle-second-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                <button type="button" class="button-midle inline-block"><span class="button-midle-label">Shop all</span></button>
+                </div>
+                <div></div>
             </div>
         </section>
         <section>
-            <div>
+            <div class="container banner-lady">
                 <!--<h2></h2>-->
+                
+                
             </div>
         </section>
         <section>
-            <div>
-                <h2>Products Healthy skin, wildly you</h2>
-                <article>
+            <div class="container products flex column">
+                <h2 class="priducts-title">Products</h2>
+                <h3 class="products-second-text">Healthy skin, wildly you</h3>
+                <div class="flex gap-14">
+                <article class="card-style">
                     <img src="./images/AntiAcneFaceWash.png" alt="AntiAcneFaceWash">
-                    <p>Cleanser</p>
-                    <p>$ 56.00 USD</p>
-                    <p>Anti Acne Face Wash</p>
-                    <button type="button">Shop now</button>
+                    <div class="flex column">
+                        <div class="flex justify-between">
+                    <p class="p-name">Cleanser</p>
+                    <p class="p-price">$ 56.00 USD</p>
+                        </div>
+                    <p class="p-second-name">Anti Acne Face Wash</p>
+                    <button type="button" class="products-button">Shop now</button>
+                    </div>
                 </article>
-                <article>
+                <article class="card-style">
                     <img src="./images/VitaminCHandNalCream.png" alt="VitaminCHandNalCream">
-                    <p>Serums</p>
-                    <p>$ 34.00 USD</p>
-                    <p>Vitamin C Hand & Nail Cream</p>
-                    <button type="button">Shop now</button>
+                    <div class="flex column">
+                        <div class="flex justify-between">
+                    <p class="p-name">Serums</p>
+                    <p class="p-price">$ 34.00 USD</p>
+                        </div>
+                    <p class="p-second-name">Vitamin C Hand & Nail Cream</p>
+                    <button type="button" class="products-button">Shop now</button>
+                    </div>
                 </article>
-                <article>
+                <article class="card-style">
                     <img src="./images/VitaminCClayFaceMask.png" alt="VitaminCClayFaceMask">
-                    <p>Body Wash</p>
-                    <p>$ 67.00 USD</p>
-                    <p>Vitamin C Clay Face Mask</p>
-                    <button type="button">Shop now</button>
+                    <div class="flex column">
+                        <div class="flex justify-between">
+                    <p class="p-name">Body Wash</p>
+                    <p class="p-price">$ 67.00 USD</p>
+                        </div>
+                    <p class="p-second-name">Vitamin C Clay Face Mask</p>
+                    <button type="button" class="products-button">Shop now</button>
+                    </div>
                 </article>
-                <article>
+                <article class="card-style">
                     <img src="./images/10In1ActiveMiracle.png" alt="10In1ActiveMiracle">
-                    <p>Night Cream</p>
-                    <p>$ 89.00 USD</p>
-                    <p>10 In 1 Active Miracle</p>
-                    <button type="button">Shop now</button>
+                    <div class="flex column">
+                        <div class="flex justify-between">
+                    <p class="p-name">Night Cream</p>
+                    <p class="p-price">$ 89.00 USD</p>
+                        </div>
+                    <p class="p-second-name">10 In 1 Active Miracle</p>
+                    <button type="button" class="products-button">Shop now</button>
+                    </div>
                 </article>
             </div>
-        </section>
-        <section>
-            <div>
-                <img src="./images/Innovation.png" alt="Innovation">
-                <h2>Feature Innovation-led Products</h2>
-                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint.</p>
-                <button type="button">Read more</button>
             </div>
         </section>
         <section>
-            <div>
-                <p>"Generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic"</p>
+            <div class="container feature flex">
+                <img src="./images/Innovation.png" alt="Innovation">
+                <div class="flex column">
+                <h2 class="top-feature">Feature</h2>
+                <h3 class="second-innovation">Innovation-led Products</h3>
+                <p class="temporibus">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint.</p>
+                <button type="button" class="button-feature">Read more</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container flex column labels-top">
+                <p class="p-labels">"Generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic"</p>
+                <div class="flex gap70 labels-margin">
                 <img src="./images/vertrio.png" alt="vertrio">
                 <img src="./images/happenz.png" alt="happenz">
                 <img src="./images/katerio.png" alt="katerio">
                 <img src="./images/qugey.png" alt="qugey">
+                </div>
             </div>
         </section>
         <section>
-            <div>
-                <article>
-                   <a href="#">Body Wash</a>
+            <div class="flex washes">
+                <article class="body-wash-bg bg-wash-size" style="margin-left: -115px;"> <!------remove style if you have a square image------>>
+                   <a class="inline-block picture-text" href="#">Body&nbsp;Wash</a>
                 </article>
-                <article>
-                   <a href="#">Face wash</a>
+                <article class="face-wash bg-wash-size">
+                   <a class="inline-block picture-text" href="#">Face&nbsp;wash</a>
                 </article>  
-                <article>
-                  <a href="#">Cleanser</a>   
+                <article class="cleaner bg-wash-size">
+                  <a class="inline-block picture-text" href="#">Cleanser</a>   
                 </article>
             </div>
         </section>
         <section>
-            <div>
-                <h2>Skinn blog</h2>
-                <article>
+            <div class="container">
+                <h2 class="skin-blog-style">Skinn blog</h2>
+                <div class="flex">
+                <article class="flex">
                     <img src="./images/bottles2.png" alt="bottles2">
-                    <p>Which skinceuticals vitamin c serum is right for you</p>
-                    <a href="#">Read more</a>
+                    <div class="flex column">
+                    <p class="second-blog-text">Which skinceuticals vitamin c serum is right for you</p>
+                    <a href="#" class="skin-blog-link">Read&nbsp;more</a>
+                    </div>
                 </article>
-                <article>
+                <article class="flex">
                     <img src="./images/ladiescucumbers.png" alt="ladiescucumbers">
-                    <p>Everything you need to know about your skin</p>
-                    <a href="#">Read more</a>
+                    <div class="flex column justify-between">
+                    <p class="second-blog-text">Everything you need to know about your skin</p>
+                    <a href="#" class="skin-blog-link">Read&nbsp;more</a>
+                    </div>
                 </article>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div>
+        <div class="foot-bg-radius container flex">
             <div>
-                <img src="./images/Skinn-logo.png" alt="Skinn-logo">
-                <p>The wise man therefore always holds in these matters to this principle</p>
-                <p>Designed by <a href="#">Webestica</a></p>
-                <p>Powered by <a href="#">Webflow</a></p>
+                <img class="skin" src="./images/Skinn-logo.png" alt="Skinn-logo">
+                <p class="skin-text-first skin-margin">The wise man therefore always holds in these matters to this principle</p>
+                <p class="skin-text-first">Designed by <a  class="skin-link-color" href="#">Webestica</a></p>
+                <p class="skin-text-first">Powered by <a class="skin-link-color" href="#">Webflow</a></p>
             </div>
-            <div>
-                <h3>Pages</h3>
-                <nav>
-                    <div>
-                        <a href="#">Home</a>
-                        <a href="#">Home 2</a>
-                        <a href="#">Shop All</a>
-                        <a href="#">Our Story</a>
-                        <a href="#">Blog</a>
-                        <a href="#">FAQs</a>
+            <div class="footer-pages">
+                <h3 class="pages-title">Pages</h3>
+                <nav class="flex">
+                    <div class="flex column pages-column-one pages-column-font">
+                        <a class="footer-link-color" href="#">Home</a>
+                        <a class="footer-link-color" href="#">Home 2</a>
+                        <a class="footer-link-color" href="#">Shop All</a>
+                        <a class="footer-link-color" href="#">Our Story</a>
+                        <a class="footer-link-color" href="#">Blog</a>
+                        <a class="footer-link-color" href="#">FAQs</a>
                     </div>
-                    <div>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Instructions</a>
-                        <a href="#">Style Guide</a>
-                        <a href="#">Licenses</a>
-                        <a href="#">Changelog</a>
+                    <div class="flex column pages-column-second pages-column-font">
+                        <a class="footer-link-color" href="#">Contact Us</a>
+                        <a class="footer-link-color" href="#">Instructions</a>
+                        <a class="footer-link-color" href="#">Style Guide</a>
+                        <a class="footer-link-color" href="#">Licenses</a>
+                        <a class="footer-link-color" href="#">Changelog</a>
                     </div>
                 </nav>
             </div>
-            <div>
-                <h3>Contact us</h3>
-                <p>Have questions or suggestions? <a href="mailto:hello@webestica.com">hello@webestica.com</a></p>
-                <p>Need assistance? Give us a call. <a href="tel:+01 598 269 4756">+01 598 269 4756</a></p>
+            <div class="contact-frame">
+                <h3 class="footer-contact-title">Contact us</h3>
+                <p class="contact-style">Have questions or suggestions? <a class="contact-link-margin-color" href="mailto:hello@webestica.com">hello@webestica.com</a></p>
+                <p class="contact-style contact-margin">Need assistance? Give us a call. <a class="contact-link-margin-color" href="tel:+01 598 269 4756">+01 598 269 4756</a></p>
             </div>
-            <div>
-                <h3>We’re here for you</h3>
-                <p>Monday - Thursday: 9:30 - 18:00</p>
-                <p>Friday: 9:30 - 15:00</p>
+            <div class="we-here">
+                <h3 class="we-here-title">We&#8217;re here for you</h3>
+                <p class="we-here-text">Monday - Thursday: 9:30 - 18:00</p>
+                <p class="we-here-text we-here-margin">Friday: 9:30 - 15:00</p>
+                <div class="flex g40 we-here-icons">
                 <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
                 <a href="#"><img src="./images/instagram.png" alt="instagram"></a>
                 <a href="#"><img src="./images/pintrest.png" alt="pintrest"></a>
                 <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+                </div>
             </div>
         </div>
     </footer>
